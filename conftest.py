@@ -7,4 +7,4 @@ from webdriver_manager.chrome import ChromeDriverManager
 def init_driver():
     web_driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
     yield web_driver
-    web_driver.close()
+    web_driver.quit()
